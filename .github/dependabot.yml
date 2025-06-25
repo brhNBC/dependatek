@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: "gradle"
+    directory: "/gradle" # Location of your libs.versions.toml file
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 1
+    commit-message:
+      prefix: "Dependabot update:"
+    groups:
+      all-dependencies:
+        patterns:
+          - "*"

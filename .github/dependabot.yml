@@ -1,12 +1,12 @@
 version: 2
 updates:
   - package-ecosystem: "gradle"
-    directory: "/" # Location of your libs.versions.toml file
+    directory: "/"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 1
     commit-message:
-      prefix: "Dependency Updates:"
+      prefix: "Dependency Updates: "
     groups:
       all-dependencies:
         patterns:

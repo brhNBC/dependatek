@@ -1,73 +1,74 @@
 [versions]
-adobe-coreSdk = "3.2.0"
-adobe-userProfile = "3.0.0"
-adobe-mediaAnalytics = "3.1.1"
-adobe-analytics = "3.0.1"
-adobe-audience = "3.0.0"
-adobe-lifecycle = "3.0.1"
-adobe-identity = "3.0.1"
-adobe-signal = "3.0.0"
+adobe-coreSdk = "3.5.0"
+adobe-userProfile = "3.0.1"
+adobe-mediaAnalytics = "3.1.2"
+adobe-analytics = "3.0.2"
+adobe-audience = "3.0.1"
+adobe-lifecycle = "3.0.2"
+adobe-identity = "3.0.2"
+adobe-signal = "3.0.1"
 
-agp = "8.8.0"
-airship = "19.5.0"
+agp = "8.9.2"
+airship = "19.13.5"
 androidx-core = "1.15.0"
 androidx-design = "1.12.0"
 browser = "1.8.0"
-branch = "5.12.4"
+branch = "5.19.0"
 
 compose-bom = "2025.02.00"
 compose-viewmodel = "2.8.7"
 compose-constraintlayout = "1.1.0"
 compose-navigation = "2.8.7"
 compose_hilt_nav = "1.2.0"
+media3 = "1.8.0"
 
 comscore = "6.12.1"
 criteo = "7.1.0"
 
-fragment = "1.8.6"
-chucker = "4.1.0"
+fragment = "1.8.9"
+chucker = "4.2.0"
 coil = "3.1.0"
 # Pre-release versions for testing Kotlin previews can be found here
-coroutines = "1.10.1"
+coroutines = "1.10.2"
 constraintlayout = "2.2.0"
 datastore = "1.1.7"
 detekt = "1.23.1"
 exoplayer = "2.19.1"
 flexbox = "3.0.0"
-media3 = "1.6.1"
-glide = "4.16.0"
-google-services = "4.4.2"
-gson = "2.11.1"
-hilt = "2.54"
-kotlin = "2.1.0"
-ksp = "2.1.0-1.0.29" # The first part of the version should always match with the kotlin version
-kotlinx-serialization = "1.8.0"
+glide = "5.0.5"
+google-services = "4.4.4"
+gson = "2.13.2"
+hilt = "2.57.1"
+
+kotlin = "2.2.20"
+ksp = "2.2.20-2.0.2" # The first part of the version should always match with the kotlin version
+kotlinx-serialization = "1.9.0"
 leakcanary = "2.14"
 
-mockito = "5.16.1"
+mockito = "5.20.0"
 
-navigation = "2.8.7"
+navigation = "2.9.5"
 
-onetrust = "202310.2.7.0"
+onetrust = "202310.2.7.0"  # DON'T Update without Eddie's permission
 
 charting = "v3.1.0"
-okhttp = "4.12.0"
+okhttp = "5.1.0"
 paging = "3.3.6"
 preferences = "1.2.1"
 recyclerview = "1.4.0"
-retrofit = "2.11.0"
-room = "2.6.1"
-taboola = "4.0.9"
-test-runner = "1.6.2"
-test-rules = "1.6.1"
+retrofit = "3.0.0"
+room = "2.8.2"
+taboola = "4.0.13"
+test-runner = "1.7.0"
+test-rules = "1.7.0"
 timber = "5.0.1"
 twc = "5.8.1202"
 viewpager2 = "1.1.0"
-webkit = "1.12.1"
-workmanager = "2.10.0"
-workmanagerHilt = "1.2.0"
-firebase-crashlytics-gradle = "3.0.3"
-firebase-perfmonitor = "1.4.2"
+webkit = "1.14.0"
+workmanager = "2.10.5"
+workmanagerHilt = "1.3.0"
+firebase-crashlytics-gradle = "3.0.6"
+firebase-perfmonitor = "2.0.1"
 firebase-bom = "33.9.0"
 location = "21.3.0"
 ads = "23.6.0"
@@ -75,13 +76,17 @@ parsely = "4.1.1"
 appcompat = "1.7.0"
 activity = "1.10.0"
 
-nbc-identity = "2.9.1-rc.4"
+nbc-identity = "2.9.2"
+lifecycleProcess = "2.9.0"
+tvFoundation = "1.0.0-alpha12"
+tvMaterial = "1.0.1"
+lifecycleRuntimeKtx = "2.10.0"
+activityCompose = "1.12.1"
 
 [plugins]
 android-application = { id = "com.android.application" }
 android-library = { id = "com.android.library" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
@@ -164,6 +169,7 @@ media3-exoplayer = { module = "androidx.media3:media3-exoplayer", version.ref = 
 media3-ui = { module = "androidx.media3:media3-ui", version.ref = "media3" }
 media3-hls = { module = "androidx.media3:media3-exoplayer-hls", version.ref = "media3" }
 media3-okhttp = { module = "androidx.media3:media3-datasource-okhttp", version.ref = "media3" }
+media3-compose = { module = "androidx.media3:media3-ui-compose", version.ref = "media3" }
 
 firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
 firebase-crashlyticsNDK = { module = "com.google.firebase:firebase-crashlytics-ndk" }
@@ -221,7 +227,7 @@ retrofit-keep = { module = "com.squareup.retrofit2:response-type-keeper", versio
 shimmer = { module = "com.facebook.shimmer:shimmer", version = "0.5.0" }
 taboola = { module = "com.taboola:android-sdk", version.ref = "taboola" }
 
-nbc-identity-sdk-release = { module = "com.nbc.identity:sdk-ui-android-release", version.ref = "nbc-identity" }
+nbc-identity-sdk-release = { module = "com.nbc.identity:sdk-ui-android", version.ref = "nbc-identity" }
 nbc-identity-sdk-debug = { module = "com.nbc.identity:sdk-ui-android-debug", version.ref = "nbc-identity" }
 
 test-junit4 = { module = "junit:junit", version = "4.13.2" }
@@ -233,10 +239,19 @@ twc-mapcallout = { module = "com.wsi.mapsdk:mapcallouts", version.ref = "twc" }
 parsely = { module = "com.parsely:parsely", version.ref = "parsely" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-lifecycle-process = { group = "androidx.lifecycle", name = "lifecycle-process", version.ref = "lifecycleProcess" }
+
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-tv-foundation = { group = "androidx.tv", name = "tv-foundation", version.ref = "tvFoundation" }
+androidx-tv-material = { group = "androidx.tv", name = "tv-material", version.ref = "tvMaterial" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 
 [bundles]
 compose-base = ["compose-navigation", "compose-hilt-navigation", "compose-livedata", "compose-material", "compose-material3", "compose-material3-size", "compose-ui", "compose-uitooling", "compose-viewmodel", "compose-lifecycle"]
 androidx-room = ["androidx-room-coroutine", "androidx-room-runtime"]
 androidx-work = ["androidx-work-runtime", "androidx-work-hilt"]
 twcbundle = ["twc-mapsdk", "twc-mapcallout"]
-media3bundle = ["media3-common", "media3-exoplayer", "media3-ui", "media3-hls", "media3-okhttp"]
+media3bundle = ["media3-common", "media3-exoplayer", "media3-ui", "media3-hls", "media3-okhttp", "media3-compose"]
